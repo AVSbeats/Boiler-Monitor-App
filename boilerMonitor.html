@@ -62,7 +62,80 @@
       </div>
 
       <div data-role="content">
-        <p>This is the Basic Information page.</p>
+        <form id="basicForm">
+          <div data-role="fieldcontain">
+            <label for="boilerId">Boiler ID:</label>
+            <input
+              type="text"
+              placeholder="Enter ID"
+              name="boilerId"
+              data-mini="false"
+              id="boilerId"
+              value=""
+              required
+            />
+          </div>
+
+          <div data-role="fieldcontain">
+            <label for="dateOfPur">Date Of Purchase:</label>
+            <input
+              type="date"
+              name="dateOfPur"
+              data-mini="false"
+              id="dateOfPur"
+              value=""
+              required
+            />
+          </div>
+
+          <div data-role="fieldcontain">
+            <label for="maxPres">Maximun Pressure:</label>
+            <input
+              type="text"
+              placeholder="Enter Value"
+              name="maxPres"
+              data-mini="false"
+              id="maxPres"
+              value=""
+              required
+            />
+          </div>
+
+          <div data-role="fieldcontain">
+            <label for="maxTemp">Maximun Temperature:</label>
+            <input
+              type="text"
+              placeholder="Enter Value"
+              name="maxTemp"
+              data-mini="false"
+              id="maxTemp"
+              value=""
+              required
+            />
+          </div>
+
+          <div data-role="fieldcontain">
+            <label for="changePass">Change Password:</label>
+            <input
+              type="password"
+              placeholder="Enter New Password"
+              name="changePass"
+              data-mini="false"
+              id="changePass"
+              value=""
+              required
+            />
+          </div>
+
+          <input
+            type="submit"
+            id="boilerUpdate"
+            data-icon="check"
+            data-iconpos="left"
+            value="Update"
+            data-inline="true"
+          />
+        </form>
       </div>
     </div>
 
@@ -97,7 +170,33 @@
       </div>
 
       <div data-role="content">
-        <p>Temperature and pressure will be entered</p>
+        <form id="tempPressForm">
+          <div data-role="fieldcontain">
+            <label for="presData">Pressure Data:</label>
+            <input
+              type="text"
+              placeholder="Enter Data"
+              name="presData"
+              data-mini="false"
+              id="presData"
+              value=""
+              required
+            />
+          </div>
+
+          <div data-role="fieldcontain">
+            <label for="tempData">Temperature Data:</label>
+            <input
+              type="text"
+              placeholder="Enter Data"
+              name="tempData"
+              data-mini="false"
+              id="tempData"
+              value=""
+              required
+            />
+          </div>
+        </form>
       </div>
     </div>
 
@@ -115,8 +214,18 @@
         <h1>Graph</h1>
       </div>
 
-      <div data-role="content">
-        <p>graph will be displayed</p>
+      <div class="panel panel-success">
+        <div class="panel-heading">
+          <h3 class="panel-title">Temperature vs Pressure</h3>
+        </div>
+        <div class="panel-body">
+          <canvas
+            id="GraphCanvas"
+            width="500"
+            height="500"
+            style="border: 1px solid black"
+          ></canvas>
+        </div>
       </div>
     </div>
 
