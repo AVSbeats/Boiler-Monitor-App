@@ -68,17 +68,22 @@
 
     <!-- Menu Page -->
     <div data-role="page" id="pageMenu">
+      <div data-role="header">
+        <h1>Boiler Monitor App</h1>
+      </div>
+
       <div data-role="controlgroup">
         <div data-role="content">
           <a href="#pageBasicInfo" data-role="button">Basic Information</a>
-          <a href="#pageTwo" data-role="button">Temperature/Pressure</a>
-          <a href="#pageThree" data-role="button">Graph</a>
-          <a href="#pageOne" data-role="button">Recommendations</a>
+          <a href="#pageTempPres" data-role="button">Temperature/Pressure</a>
+          <a href="#pageGraph" data-role="button">Graph</a>
+          <a href="#pageRec" data-role="button">Recommendations</a>
         </div>
       </div>
     </div>
 
-    <div data-role="page" id="pageOne">
+    <!-- Temperature & Pressure Page-->
+    <div data-role="page" id="pageTempPres">
       <div data-role="header">
         <a
           href="#pageMenu"
@@ -88,14 +93,16 @@
           data-inline="true"
           >Menu</a
         >
-        <h1>Basic Information</h1>
+        <h1>Temp & Press</h1>
       </div>
+
       <div data-role="content">
-        <p>One will display</p>
+        <p>Temperature and pressure will be entered</p>
       </div>
     </div>
 
-    <div data-role="page" id="pageTwo">
+    <!-- Graph Page -->
+    <div data-role="page" id="pageGraph">
       <div data-role="header">
         <a
           href="#pageMenu"
@@ -105,14 +112,16 @@
           data-inline="true"
           >Menu</a
         >
-        <h1>Page Two</h1>
+        <h1>Graph</h1>
       </div>
+
       <div data-role="content">
-        <p>Two</p>
+        <p>graph will be displayed</p>
       </div>
     </div>
 
-    <div data-role="page" id="pageThree">
+    <!-- Recommendations Page -->
+    <div data-role="page" id="pageRec">
       <div data-role="header">
         <a
           href="#pageMenu"
@@ -122,10 +131,11 @@
           data-inline="true"
           >Menu</a
         >
-        <h1>Page three</h1>
+        <h1>Recommendations</h1>
       </div>
+
       <div data-role="content">
-        <p>three</p>
+        <p>Recommendations will be displayed</p>
       </div>
     </div>
   </body>
