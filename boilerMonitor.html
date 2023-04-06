@@ -1,6 +1,6 @@
 <!--
     Name: Abraham Vallejos-Soto
-    Date: 4/5/2023
+    Date: 4/6/2023
     Assignment: Week Lab 5
 -->
 
@@ -26,10 +26,11 @@
 
   <!-- Entry Page -->
   <body>
-    <div data-role="page" id="pageHome">
+    <div data-role="page" id="pageEntryPage">
       <div data-role="header">
         <h1>Entry Page</h1>
       </div>
+
       <div data-role="content">
         <form id="login-form">
           <label for="username">Username:</label>
@@ -37,9 +38,94 @@
 
           <label for="password">Password:</label>
           <input type="password" id="password" name="password" />
-
-          <button type="submit">Log In</button>
+          <div data-role="controlgroup" id="numKeypad">
+            <a href="#pageBasicInfo" data-role="button" id="login" type="submit"
+              >Log In</a
+            >
+          </div>
         </form>
+      </div>
+    </div>
+
+    <!-- Basic Information Page -->
+    <div data-role="page" id="pageBasicInfo">
+      <div data-role="header">
+        <a
+          href="#pageMenu"
+          data-role="button"
+          data-icon="bars"
+          data-iconpos="left"
+          data-inline="true"
+          >Menu</a
+        >
+        <h1>Basic Information</h1>
+      </div>
+
+      <div data-role="content">
+        <p>This is the Basic Information page.</p>
+      </div>
+    </div>
+
+    <!-- Menu Page -->
+    <div data-role="page" id="pageMenu">
+      <div data-role="controlgroup">
+        <div data-role="content">
+          <a href="#pageBasicInfo" data-role="button">Basic Information</a>
+          <a href="#pageTwo" data-role="button">Temperature/Pressure</a>
+          <a href="#pageThree" data-role="button">Graph</a>
+          <a href="#pageOne" data-role="button">Recommendations</a>
+        </div>
+      </div>
+    </div>
+
+    <div data-role="page" id="pageOne">
+      <div data-role="header">
+        <a
+          href="#pageMenu"
+          data-role="button"
+          data-icon="bars"
+          data-iconpos="left"
+          data-inline="true"
+          >Menu</a
+        >
+        <h1>Basic Information</h1>
+      </div>
+      <div data-role="content">
+        <p>One will display</p>
+      </div>
+    </div>
+
+    <div data-role="page" id="pageTwo">
+      <div data-role="header">
+        <a
+          href="#pageMenu"
+          data-role="button"
+          data-icon="bars"
+          data-iconpos="left"
+          data-inline="true"
+          >Menu</a
+        >
+        <h1>Page Two</h1>
+      </div>
+      <div data-role="content">
+        <p>Two</p>
+      </div>
+    </div>
+
+    <div data-role="page" id="pageThree">
+      <div data-role="header">
+        <a
+          href="#pageMenu"
+          data-role="button"
+          data-icon="bars"
+          data-iconpos="left"
+          data-inline="true"
+          >Menu</a
+        >
+        <h1>Page three</h1>
+      </div>
+      <div data-role="content">
+        <p>three</p>
       </div>
     </div>
   </body>
